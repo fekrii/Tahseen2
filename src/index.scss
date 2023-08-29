@@ -1,0 +1,523 @@
+@font-face {
+  font-family: MadaniThin;
+  src: url("/assets/fonts/alfont_com_Madani-Arabic-Thin-1.ttf");
+}
+
+@font-face {
+  font-family: MadaniRegular;
+  src: url("/assets/fonts/alfont_com_Madani-Arabic-Regular.ttf");
+}
+
+@font-face {
+  font-family: MadaniSemiBold;
+  src: url("/assets/fonts/alfont_com_Madani-Arabic-Semi-Bold-1.ttf");
+}
+
+@font-face {
+  font-family: MadaniBold;
+  src: url("/assets/fonts/alfont_com_Madani-Arabic-Bold-2.ttf");
+}
+
+// Responsive Variable
+$xxxl: "only screen and (min-width: 1920px)";
+$xxl: "only screen and (min-width: 1400px) and (max-width: 1919px)";
+$xxl-1: "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (max-width: 767px)";
+$xs: "(max-width: 575px)";
+$mobile: "screen and (max-width: 768px)";
+
+// Sizes Variables
+$logo_height: 55px;
+$navbar-height: 150px;
+
+// Colors
+$main-color: #c23f6a;
+$secondary-color: #07262d;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: MadaniRegular;
+  background-color: $secondary-color;
+}
+
+* {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+.bigTitle {
+  color: white;
+  font-family: MadaniRegular;
+  font-size: 88px;
+
+  @media #{$md} {
+    font-size: 48px;
+  }
+
+  @media #{$mobile} {
+    font-size: 32px;
+  }
+}
+
+.Tahseen {
+  .hero {
+    position: relative;
+    min-height: 200vh;
+    background-image: url("/assets/images/hero-bg.webp");
+    background-size: cover;
+    width: 100%;
+
+    &__top-fade {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1 !important;
+    }
+
+    &__bottom-fade {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      z-index: -1 !important;
+    }
+
+    &__content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      margin-top: 15vh;
+      padding: 12px;
+
+      &__side {
+        max-width: 120px;
+        width: 100%;
+        height: fit-content;
+
+        @media #{$mobile} {
+          display: none !important;
+        }
+      }
+
+      &__main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        max-width: 880px;
+        gap: 44px;
+
+        p {
+          color: $main-color;
+          font-size: 32px;
+          font-family: MadaniSemiBold;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          &::before {
+            content: "";
+            background-color: $main-color;
+            height: 2px;
+            width: 48px;
+          }
+
+          @media #{$mobile} {
+            font-size: 20px;
+          }
+        }
+
+        span {
+          color: #fff;
+          font-family: MadaniBold;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        @media #{$mobile} {
+          gap: 12px;
+          text-align: center;
+          align-items: center;
+        }
+      }
+
+      &__social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        svg {
+          color: #fff;
+          font-size: 24px;
+          font-family: MadaniBold;
+        }
+
+        h3 {
+          transform: rotate(90deg);
+          color: #fff;
+          font-size: 18px;
+          font-family: MadaniRegular;
+        }
+      }
+
+      @media #{$mobile} {
+        margin-top: 25vh;
+      }
+    }
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $navbar-height;
+
+    &__logo {
+      height: $logo_height;
+
+      @media #{$mobile} {
+        height: $logo_height / 1.5;
+      }
+    }
+
+    &__navlist {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      gap: 61px;
+
+      li {
+        font-family: MadaniSemiBold;
+        list-style: none;
+        font-size: 22px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+
+  .featurecard {
+    padding: 0px 12px;
+
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    gap: 120px;
+    margin-bottom: 240px;
+
+    &:nth-of-type(odd) {
+      flex-direction: row-reverse;
+    }
+
+    &__image {
+      width: 560px;
+      height: 720px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill
+      }
+      @media #{$md} {
+        display: none;
+      }
+      @media #{$mobile} {
+        display: none;
+      }
+
+      video {
+        width: 560px;
+        height: 720px;
+        object-fit: cover;
+      }
+      @media #{$md} {
+        display: none;
+      }
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+
+    &__information {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: end;
+      gap: 27px;
+      max-width: 720px;
+
+      @media #{$mobile} {
+        text-align: center;
+        align-items: center;
+      }
+
+      p {
+        color: $main-color;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 40px;
+        font-family: MadaniThin;
+        text-transform: uppercase;
+        &::after {
+          content: "";
+          background-color: $main-color;
+          height: 2px;
+          width: 48px;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 36px;
+        font-family: MadaniSemiBold;
+
+        @media #{$mobile} {
+          font-size: 28px;
+        }
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 20px;
+        font-family: MadaniRegular;
+        line-height: 32px;
+        text-align: right;
+
+        @media #{$mobile} {
+          font-size: 16px;
+        }
+      }
+
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-family: MadaniSemiBold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+
+      span {
+        color: $main-color;
+        font-size: 18px;
+        font-family: MadaniBold;
+
+        @media #{$mobile} {
+          font-size: 14px;
+        }
+      }
+
+      &__fadednumber {
+        position: absolute;
+        top: -150px;
+        left: -30px;
+
+        h4 {
+          color: #fff;
+          font-size: 240px;
+          font-family: MadaniBold;
+          line-height: 240px;
+          opacity: 0.1;
+        }
+
+        @media #{$mobile} {
+          top: -100px;
+          left: 0;
+
+          h4 {
+            font-size: 160px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    align-items: stretch;
+    gap: 230px;
+
+    @media #{$mobile} {
+      justify-content: space-between;
+      gap: 0px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      min-width: fit-content;
+
+      &__title {
+        margin-bottom: 24px;
+        color: $main-color;
+        font-size: 24px;
+        font-family: MadaniBold;
+      }
+
+      &__item {
+        align-items: flex-end;
+        color: #fff;
+        font-size: 18px;
+        font-family: MadaniSemiBold;
+        line-height: 32px;
+        margin-bottom: 16px;
+        text-decoration: none;
+      }
+    }
+
+    &__about {
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      img {
+        max-width: 320px;
+      }
+      p {
+        margin-top: 18px;
+        color: #fff;
+        font-size: 22px;
+        font-family: MadaniRegular;
+        max-width: 320px;
+      }
+
+      span {
+        margin-top: auto;
+        color: #fff;
+        font-size: 18px;
+        font-family: MadaniSemiBold;
+        opacity: 0.5;
+      }
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+}
+
+.carousel-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: #c23f6a;
+  color: #fff;
+}
+
+.previous {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  p {
+  color: $main-color;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 40px;
+  font-family: MadaniThin;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    background-color: $main-color;
+    height: 2px;
+    width: 48px;
+    }
+  }
+
+  button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+  background-color: #c23f6a;
+  color: #fff;
+  }
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
