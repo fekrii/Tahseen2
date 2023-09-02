@@ -1,10 +1,14 @@
-import React from "react";
+
+import React, {useRef} from "react";
 import TahseenLogo from "../assets/images/full-logo.svg";
 
 const Footer = () => {
+
+
+
   return (
     <div className="footer">
-      <div className="footer__links">
+      {/* <div className="footer__links">
         <h1 className="footer__links__title">تعرف علينا</h1>
         <a className="footer__links__item" href="#">
           فريقنا
@@ -15,11 +19,13 @@ const Footer = () => {
         <a className="footer__links__item" href="#">
           صحافة
         </a>
-      </div>
+      </div> */}
 
-      <div className="footer__links">
+
+
+      {/* <div className="footer__links">
         <h1 className="footer__links__title">المزيد عن تحسين</h1>
-        <a className="footer__links__item" href="#">
+        <a className="footer__links__item" href="">
           عن تحسين
         </a>
         <a className="footer__links__item" href="#">
@@ -34,7 +40,7 @@ const Footer = () => {
         <a className="footer__links__item" href="#">
           شروط الخصوصية
         </a>
-      </div>
+      </div> */}
 
       <div className="footer__about">
         <img src={TahseenLogo} height={60} alt="logo" />

@@ -7,6 +7,7 @@ import FeatureCard from "./components/FeatureCard";
 import Footer from "./components/Footer";
 
 import ContactForm from "./components/ContactForm";
+import OurParteners from "./components/OurParteners";
 
 
 const data = [
@@ -181,6 +182,7 @@ const App = () => {
         <FeatureCard {...card} key={idx} />
       ))}
 
+      <OurParteners />
       <ContactForm />
       <Footer />
 
