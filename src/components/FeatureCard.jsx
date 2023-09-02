@@ -132,16 +132,27 @@ const FeatureCard = ({ title, subtitle, description, number }) => {
     }
   };
 
+  const hasNextImage = currentImageIndex < images.length - 1;
+  const hasPreviousImage = currentImageIndex > 0;
+
   return (
+    
     <div className="featurecard">
       <div className="featurecard__image">
       {renderMedia()}
-      <button className="carousel-button previous" onClick={previousImage}>
-          السابق
-        </button>
+      {hasNextImage && (
         <button className="carousel-button next" onClick={nextImage}>
           التالي
         </button>
+      )}
+      {hasPreviousImage && (
+        <button className="carousel-button previous" onClick={previousImage}>
+          السابق
+        </button>
+      )}
+
+
+
       </div>
       <div className="featurecard__information">
         <p>{title}</p>

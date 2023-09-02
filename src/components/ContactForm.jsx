@@ -34,7 +34,7 @@ const  ContactForm = () => {
         errors={state.errors}
       />
       <button type="submit" disabled={state.submitting}>
-        Submit
+        إرسال
       </button>
     </form>
     </div>
