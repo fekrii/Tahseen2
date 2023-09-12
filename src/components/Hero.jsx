@@ -34,7 +34,7 @@ const HeroContent = () => {
       <div className="hero__content__pagination hero__content__side"></div>
 
       <div className="hero__content__main">
-        <p>مؤسسه تحسين</p>
+        <p>تحسين</p>
         <h1 className="bigTitle">قـرى مـستدامـة ببصمة كـربونية تحـت الـصفر.</h1>
         <span>
           <BsArrowDown fontSize={24} /> تصفح للأسفل

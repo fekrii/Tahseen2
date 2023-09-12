@@ -5,7 +5,8 @@ const Navbar = () => {
 
   const handleClick = (res) => {
     if (res === "تواصل معنا") {
-      // Navigate to the ContactForm page.
+      // go to url in new tab
+      window.open("https://docs.google.com/forms/d/e/1FAIpQLScy1h5HqpCsXs-J-TqJjsL3jKaa5TBO-P28mYoY_g8Q59BwQg/viewform?usp=sf_link");
     
     }
   };

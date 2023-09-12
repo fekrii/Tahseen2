@@ -19,7 +19,7 @@ const FeatureCard = ({ title, subtitle, description, number }) => {
     if (number === "00") {
       var temp = importAll(require.context('../assets/images/00', false, /\.(png|jpeg|svg|mp4)$/));
       setImages(temp);
-      var tempFile = require("../assets/files/00.docx");
+      var tempFile = require("../assets/files/00.pdf");
       setFile(tempFile);
     }
     else if(number === "01"){
@@ -77,12 +77,7 @@ const FeatureCard = ({ title, subtitle, description, number }) => {
       setImages(temp);
       var tempFile = require("../assets/files/11.pdf");
       setFile(tempFile);
-    } else {
-      var temp = importAll(require.context('../assets/images/00', false, /\.(png|jpeg|svg|mp4)$/));
-      setImages(temp);
-      var tempFile = require("../assets/files/00.docx");
-      setFile(tempFile);
-    }
+    } 
   }
 
   useEffect(() => {
