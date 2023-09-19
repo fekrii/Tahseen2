@@ -62,11 +62,11 @@ const FeatureCard = ({ title, subtitle, description, number }) => {
       setImages(temp);
       var tempFile = require("../assets/files/08.pdf");
       setFile(tempFile);
-    } else if (number === "09") {
-      var temp = importAll(require.context('../assets/images/09', false, /\.(png|jpeg|svg|mp4)$/));
-      setImages(temp);
-      var tempFile = require("../assets/files/09.pdf");
-      setFile(tempFile);
+    // } else if (number === "09") {
+    //   var temp = importAll(require.context('../assets/images/09', false, /\.(png|jpeg|svg|mp4)$/));
+    //   setImages(temp);
+    //   var tempFile = require("../assets/files/09.pdf");
+    //   setFile(tempFile);
     } else if (number === "10") {
       var temp = importAll(require.context('../assets/images/10', false, /\.(png|jpeg|svg|mp4)$/));
       setImages(temp);
