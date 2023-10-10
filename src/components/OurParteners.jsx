@@ -14,7 +14,7 @@ const OurParteners = () => {
 
     return (
         <div className="our-parteners">
-            <p>القائمين علي المشروع</p>
+            <p>القائمون على المشروع</p>
             <div className="our-parteners-logos">
                 {images.map((image, index) => {
                     return (

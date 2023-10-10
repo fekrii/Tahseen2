@@ -45,6 +45,7 @@ const Footer = () => {
       <div className="footer__about">
         <img src={TahseenLogo} height={60} alt="logo" />
         <p>قـرى مـستدامـة ببصمة كـربونية تحـت الـصفر.</p>
+        <br></br>
         <span>Copyright 2023 TAHSEEN, Inc. Terms & Privacy</span>
       </div>
     </div>
