@@ -7,42 +7,66 @@ import OurParteners from "./components/OurParteners";
 import FeatureCard from "./components/FeatureCard";
 
 const images00 = getImagesList(
-  import.meta.glob("/public/assets/images/00/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/00/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images01 = getImagesList(
-  import.meta.glob("/public/assets/images/01/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/01/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images02 = getImagesList(
-  import.meta.glob("/public/assets/images/02/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/02/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images03 = getImagesList(
-  import.meta.glob("/public/assets/images/03/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/03/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images04 = getImagesList(
-  import.meta.glob("/public/assets/images/04/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/04/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images05 = getImagesList(
-  import.meta.glob("/public/assets/images/05/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/05/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images06 = getImagesList(
-  import.meta.glob("/public/assets/images/06/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/06/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images07 = getImagesList(
-  import.meta.glob("/public/assets/images/07/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/07/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const images08 = getImagesList(
-  import.meta.glob("/public/assets/images/08/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/08/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 
 const images09 = getImagesList(
-  import.meta.glob("/public/assets/images/09/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/09/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 
 const images10 = getImagesList(
-  import.meta.glob("/public/assets/images/10/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/10/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 const ourPartnersMedia = getImagesList(
-  import.meta.glob("/public/assets/images/our-parteners/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}")
+  import.meta.glob(
+    "/public/assets/images/our-parteners/**/*.{png,jpg,jpeg,PNG,JPEG,mp4,webp}"
+  )
 );
 
 function getImagesList(modules) {
